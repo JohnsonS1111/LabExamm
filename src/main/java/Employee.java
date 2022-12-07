@@ -3,6 +3,7 @@ public class Employee {
     private String pps;
 
     public Employee(){
+        setName(name);
         setPPS(pps);
     }
 
@@ -12,6 +13,15 @@ public class Employee {
         }
         else{
             throw new IllegalArgumentException("Employee PPS should be 6 characters long");
+        setName(name);
+    }
+
+    public void setName(String name) {
+        if(name.length() >= 5 || name.length() <= 22){
+            this.name = name;
+        }
+        else{
+            throw new IllegalArgumentException("Name provided is not valid");
         }
     }
 }
