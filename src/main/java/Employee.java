@@ -15,6 +15,10 @@ public class Employee {
         }
     }
 
+    public String getName() {
+        return name;
+    }
+
     public void setName(String name) {
         if(name.length() >= 5 || name.length() <= 22){
             this.name = name;
@@ -22,5 +26,9 @@ public class Employee {
         else{
             throw new IllegalArgumentException("Name provided is not valid");
         }
+    }
+
+    public String getPps() {
+        return pps;
     }
 }
