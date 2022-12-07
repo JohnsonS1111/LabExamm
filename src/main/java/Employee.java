@@ -8,12 +8,11 @@ public class Employee {
     }
 
     public void setPPS(String pps) {
-        if(pps.length() == 6){
+        if (pps.length() == 6) {
             this.pps = pps;
-        }
-        else{
+        } else {
             throw new IllegalArgumentException("Employee PPS should be 6 characters long");
-        setName(name);
+        }
     }
 
     public void setName(String name) {
