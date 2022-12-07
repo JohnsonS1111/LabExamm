@@ -14,4 +14,8 @@ public class Employee {
             throw new IllegalArgumentException("Name provided is not valid");
         }
     }
+
+    public String getName() {
+        return name;
+    }
 }
