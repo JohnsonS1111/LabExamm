@@ -12,6 +12,28 @@ class EmployeeTest {
     }
 
 
+    @Test
+    void testName(){
+        myEmployee.setName("Johnson");
+        assertEquals("Johnson", myEmployee.getName());
+    }
+
+    @Test
+    void testNameFail(){
+        myEmployee.setName("Bob");
+    }
+
+    @Test
+    void testPPS(){
+        myEmployee.setPPS("12345G");
+        assertEquals("12345G", myEmployee.getPps());
+    }
+
+    @Test
+    void testPPSFail(){
+
+    }
+
     @org.junit.jupiter.api.AfterEach
     void tearDown() {
     }
